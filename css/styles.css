@@ -17,7 +17,7 @@ body {
     display: flex;
     width: 200px;
     flex-wrap: wrap;
-    background-color: wheat;
+    background-color: purple;
     /* opacity: 0.5; */
 }
 
