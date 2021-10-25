@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: yellow; */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* background: green; */
+    /* padding-left: 575px; */
+    padding-bottom: 50px;
+ }  
+
+.grid-wrapper {
+    /* border: 1px solid black; */
+    display: flex;
+    width: 200px;
+    flex-wrap: wrap;
+    background-color: wheat;
+    /* opacity: 0.5; */
+}
+
+.grid {
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 80px;
+    /* width: 50px; */
+    flex: 1 1 50px;
+    /* background: red; */
+    border: 1px solid rgb(75, 75, 75);
+    text-align: center;
+    line-height: 80px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.game-outcome {
+    font-size: 30px;
+    font-weight: 1000;
+    /* color: white; */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color:beige; */
+    width: 200px;
+    height: 245px;
+    margin-top: -245px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 1 ;
+    color:rgb(0, 0, 0);
+}
+
+.start-game {
+    font-size: 30px;
+    font-weight: 1000;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: blue; */
+    width: 200px;
+    height: 235px;
+    /* margin-top: -245px;  */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* opacity: 0.5 ; */
+    /* color:aliceblue */
+}
+
+.inst {
+    background:coral;
+    font-style:italic;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: -35px;
+    animation-name: inst;
+    animation-duration: 10s;
+    padding-left: 10px;
+    padding-right: 10px;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes inst {
+ 0% {margin-left: 0px;}
+ 25% {margin-right: -100vw; background: rgb(9, 248, 188);}
+ /* 50% {margin-right: 0px; background-color: crimson;} */
+ 75% {margin-left: -100vw; background-color: rgb(197, 39, 245);}
+ 100%{margin-left: 0px;}
+}
+/* #grid0, #grid2, #grid4, #grid6, #grid8 {
+    background-color: rgb(245, 227, 227);
+}
+
+#grid1, #grid3, #grid5, #grid7 {
+    background-color: #b7d8d8;
+} */
+
+#grid0, #grid3, #grid6 {
+    border-left: none;
+}
+
+#grid2, #grid5, #grid8 {
+    border-right: none;
+}
+
+#grid0, #grid1, #grid2 {
+    border-top: none;
+}
+
+#grid6, #grid7, #grid8 {
+    border-bottom: none;
+}
+
+section {
+    background-color: bisque;
+    /* padding: 0px 100px 0px 100px; */
+    display: flex;
+    justify-content: center;
+}
+
+.mid {
+    text-align: center;
+    width: 100px;
+}
+
+.score {
+    text-align: center;
+    margin: 0px 100px 0px 100px;
+}
+
+.restart {
+    border-radius: 3px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#Xscore, #Oscore {
+    font-weight: bold;
+}
+
+.radio-buttons {
+    /* background-color: darkred; */
+    width: 403px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.player {
+    background-color: lightblue;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.com-easy {
+    background-color: yellowgreen;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.com-normal {
+    background-color: lightgreen;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.com-hard {
+    background-color: red;
+    width: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
