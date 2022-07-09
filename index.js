@@ -44,6 +44,7 @@
 //         return pokemon
 //     }
 
+console.log("Paid")
 
     function displayGrid() {
         const body = document.querySelector('body');
